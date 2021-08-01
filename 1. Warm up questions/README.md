@@ -33,7 +33,7 @@ Problem Description: Given n non-negative integers representing an elevation map
 ##### Sample Output 2 :
     70
 
-<br>
+
 ##### Explanation for Sample Input 1 :
     Refer to the image for better comprehension:
 ![Alt Text](https://ninjasfiles.s3.amazonaws.com/0000000000001829.png)
