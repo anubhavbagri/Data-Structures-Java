@@ -38,7 +38,6 @@ Problem Description: Given n non-negative integers representing an elevation map
     Refer to the image for better comprehension:
 ![Alt Text](https://ninjasfiles.s3.amazonaws.com/0000000000001829.png)
 
----
 ## Problem 2
 
 Problem Name: **Chocolate Carton Distribution Problem**
