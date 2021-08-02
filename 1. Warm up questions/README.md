@@ -116,10 +116,10 @@ Problem Description: Given an array of numbers, find the maximum sum of any cont
 #### Follow up: Do this in O(N) time.
 
 ##### Input Format:
-#### The first line of input contains size of array, which is denoted by N and second line of input contains N space separated integers.
+    The first line of input contains size of array, which is denoted by N and second line of input contains N space separated integers.
 
 ##### Output Format:
-#### The first and only line of output should print the maximum subarray sum, as described in the description.
+    The first and only line of output should print the maximum subarray sum, as described in the description.
 
 ## Problem 5
 
