@@ -103,3 +103,136 @@ Problem Description: There is only one beauty parlour in the town CodingNinjasLa
 #### Explanation:
     4 because at 1100 hours, we will have maximum number of customers at the shop, throughout the day. And that maximum number is 4.
 
+## Problem 4
+
+Problem Name: **Maximum Subarray Sum**<br>
+Problem Level: MEDIUM<br>
+Problem Description: Given an array of numbers, find the maximum sum of any contiguous subarray of the array.
+
+#### For example, given the array [34, -50, 42, 14, -5, 86], the maximum sum would be 137, since we would take elements 42, 14, -5, and 86.
+
+#### Given the array [-5, -1, -8, -9], the maximum sum would be -1.
+
+#### Follow up: Do this in O(N) time.
+
+##### Input Format:
+#### The first line of input contains size of array, which is denoted by N and second line of input contains N space separated integers.
+
+##### Output Format:
+#### The first and only line of output should print the maximum subarray sum, as described in the description.
+
+## Problem 5
+
+Problem Name: **Organizational Woes**<br>
+Problem Level: MEDIUM<br>
+Problem Description:
+#### 1. You are given structure of an organization in the form of a tree.
+#### 2. Data of each node contains name of a designation and data of its child nodes contains the name of designation reporting to it. The data of root node will always contain the string: "CEO", as it is the apex designation.
+#### 3. The designation "individual_contributors" have nobody reporting to them. This means they are no child nodes to designation containing the data "individual_contributors".
+#### 4.  There are levels of hierarchy. The level of CEO or root node is 1 and levels of its reporting designations or child nodes is 2 and so on.
+#### 5. You have to tell whether all the "individual_contributors" are at same level of hierarchy. You have to answer in either "true" or "false".
+
+##### Input Format:
+    The input has already been taken for you. You have to just complete the given function.
+##### Constraints:
+    Time Limit: 1 second
+    All the designations are comprised of lowercase letter. The length of string is in the range: [1, 30].
+##### Output Format:
+    The output has already been taken for you. You have to just complete the given function.
+
+ ##### Sample Input 1:
+    ceo 3 cto cfo individual_contributors 2 individual_contributors individual_contributors 1 accountant 0 0 0 1 individual_contributors 0
+
+##### Sample Output 1:
+    false
+
+##### Sample Input 2:
+    ceo 2 cto cfo 2 individual_contributors individual_contributors 1 individual_contributors 0 0 0
+##### Sample Output 2:
+    true
+
+## Problem 6
+
+Problem Name: **Count how many people are not working** <br>
+Problem Level: MEDIUM <br>
+Problem Description:
+#### 1. You are given structure of an organization in the form of a tree.
+#### 2. Data of each node contains name of a designation and data of its child nodes contains the name of designation reporting to it. The data of root node will always contain the string: "CEO", as it is the apex designation.
+#### 3. The designation "individual_contributors" have nobody reporting to them. This means they are no child nodes to designation containing the data "individual_contributors".
+#### 4.  There are levels of hierarchy. The level of CEO or root node is 1 and levels of its reporting designations or child nodes is 2 and so on.
+#### 5. It is believed that only people at designation "individual_contributors" are working. If we go by this myth, can you tell us how many people are not working in the organization.
+##### Input Format:
+    The input has already been taken for you. You have to just complete the given function.
+##### Constraints:
+    Time Limit: 1 second
+    All the designations are comprised of lowercase letter. The length of string is in the range: [1, 30].
+##### Output Format:
+    The output has already been taken for you. You have to only complete the given function.
+
+ ##### Sample Input 1:
+    ceo 3 cto cfo individual contributors 2 individual_contributors individual_contributors 1 accountant 0 0 0 1 individual_contributors 0
+
+##### Sample Output 1:
+    4
+
+## Problem 7
+
+Problem Name: **Bringing them together** <br>
+Problem Level: MEDIUM <br>
+Problem Description:
+#### 1. Rohit was organizing a party. He made his friends stand linearly in a queue and gave a cap with number printed on its top to each of its friend.
+#### 2. He wanted to bring all the people whose cap number is less than or equal to 'X' together. But he wanted to achieve it in minimum transitions of his friends.
+#### 3. Given the initial position of friends with their cap numbers, can you tell us minimum number of transitions required to bring all the people whose cap number is less than or equal to 'X' together.
+
+##### Input Format:
+    The first line contains the number of friends that came to the party. Let it be denoted by n.
+    The following line contains n space separated integers, that denotes the cap of his standing friends. The following line contains the value of X.
+
+##### Constraints:
+    Time Limit: 1 second
+    The value of n lies in the range: [1, 10000]
+    The value of X lies in the range: [1, 1000]
+
+##### Output Format:
+    The first and only line of output contains the value of minimum number of transitions, as described in the task.
+
+ ##### Sample Input 1:
+    7
+    12 17 19 15 18 17 14
+    15
+##### Sample Output 1:
+    2
+##### Explanation:
+    There are three elements which are less than or equal to 'X'. Following are those three elements: 12, 14, 15.
+    The minimum number of transitions will be two. One of the many subarrays, where the minimum transitions will be two is first subarray of size 3, i.e. [12, 17, 19]. We can bring all elements together by swapping (17 & 15) and (19 & 14).
+
+## Problem 8
+
+Problem Name: **Three Teams** <br>
+Problem Level: MEDIUM<br>
+Problem Description:
+#### 1. There are N players, linearly standing. Each player has a chest number. The number also denotes the strength of that player. So, greater the number, stronger the player.
+#### 2.  You have to form 3 teams from these N players. Each team has to be of k size.
+#### 3. There are two restrictions in selections of players. First, a particular player can only be selected for one team. So, two teams cannot have the same player. Second, you can only select consecutively standing players for a particular team
+#### 4. Can you tell us the maximum possible cumulative sum of selected players chest number, if the selection is done according to the above mentioned conditions.
+
+##### Input Format:
+    The first line of input contains the value of N.
+    The following line contains N space separated integers, that denotes the value of players chest number. The following line contains the value of k. Input would be provided in such a way that selection of 3 teams will always be possible.
+
+##### Constraints:
+    Time Limit: 1 second
+    The value of N lies in the range: [1, 10000]
+    The value of N space separated integers lies in the range: [1, 65535]. The values can be duplicate. As value denotes chest number and chest number denotes strength and since, two players can have similar strength, hence, there can be duplicate values in the array.
+    The value of k lies in the range: [1, 1000].
+
+##### Output  Format:
+    The first and only line of output contains the maximum sum, as described in the task.
+ ##### Sample Input 1:
+    8
+    1 2 1 2 6 7 5 1
+    2
+##### Sample Output 1:
+    23
+##### Explanation:
+    For selections, following 3 teams will have maximum sum: [1,2], [2, 6], [7, 5]
