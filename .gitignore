@@ -1,1 +1,13 @@
 *.class
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.classpath
+.project
+.settings/
+.vscode/
