@@ -12,9 +12,10 @@ public class Student {
     // rollNumber = 100;
     // }
 
-    public Student(String n, int rn) {
-        name = n;
-        rollNumber = rn;
+    public Student(String name, int rollNumber) {
+        System.out.println(this);
+        this.name = name;
+        this.rollNumber = rollNumber;
     }
 
     // public void setRollNumber(int rn) {
