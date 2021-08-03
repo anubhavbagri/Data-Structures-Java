@@ -39,7 +39,7 @@ public class DynamicArray {
     }
 
     public int get(int index) {
-        if (nextIndex >= index) {
+        if (index >= nextIndex) {
             // error out
             return -1;
         }

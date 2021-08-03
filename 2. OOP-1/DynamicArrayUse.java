@@ -15,8 +15,8 @@ public class DynamicArrayUse {
 
         System.out.println(d.size());
 
-        d.set(4, 10);
-        System.out.println(d.get(3));
+        d.set(4, 10); // sets 10 at index 4
+        System.out.println(d.get(3)); // get the value at index 3
         System.out.println(d.get(4));
 
         while (!d.isEmpty()) {
