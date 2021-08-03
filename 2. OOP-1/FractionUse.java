@@ -1,17 +1,27 @@
 public class FractionUse {
-    public static void temp() throws ZeroDenominatorException {
+    public static void main(String[] args) {
         Fraction f1 = new Fraction(20, 30);
         f1.print();
         // 2/3
 
-        f1.setDenominator(0);
+        f1.setNumerator(12);
         // 4/1
         int d = f1.getDenominator();
         System.out.println(d);
         f1.print();
 
         f1.setNumerator(10);
-        f1.setDenominator(30);
+        int i = 47;
+        try {
+            i++; // this will be executed
+            f1.setDenominator(0);
+            i++; // executed incase of no exception
+        } catch (ZeroDenominatorException e) {
+            System.out.println("Hey don't input 0 as denominator"); // executed only in case of exception
+        } finally {
+            // any code present here will be called whatsoever
+        }
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + i);
         // 1/3
         f1.print();
 
@@ -33,9 +43,5 @@ public class FractionUse {
         f1.print();
         f3.print();
         f4.print();
-    }
-
-    public static void main(String[] args) throws ZeroDenominatorException {
-        temp();
     }
 }
