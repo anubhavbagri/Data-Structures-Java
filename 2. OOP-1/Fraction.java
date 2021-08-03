@@ -24,10 +24,10 @@ public class Fraction {
         simplify();
     }
 
-    public void setDenominator(int d) {
+    public void setDenominator(int d) throws ZeroDenominatorException {
         if (d == 0) {
-            //
-            return;
+            ZeroDenominatorException e = new ZeroDenominatorException();
+            throw e;
         }
         denominator = d;
         simplify();

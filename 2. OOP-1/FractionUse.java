@@ -1,10 +1,10 @@
 public class FractionUse {
-    public static void main(String[] args) {
+    public static void temp() throws ZeroDenominatorException {
         Fraction f1 = new Fraction(20, 30);
         f1.print();
         // 2/3
 
-        f1.setDenominator(12);
+        f1.setDenominator(0);
         // 4/1
         int d = f1.getDenominator();
         System.out.println(d);
@@ -33,5 +33,9 @@ public class FractionUse {
         f1.print();
         f3.print();
         f4.print();
+    }
+
+    public static void main(String[] args) throws ZeroDenominatorException {
+        temp();
     }
 }
