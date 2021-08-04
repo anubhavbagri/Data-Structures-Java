@@ -1,35 +1,25 @@
 import java.util.Scanner;
 
 public class AllIndex {
-    private static int[] getFirstIndex(int input[], int x, int startIndex) {
+    private static int[] getFirstIndex(int input[], int x, int startIndex, int foundSoFar) {
 
-        // if startindex reaches the end return empty array.
-        if (startIndex > input.length - 1) {
-            int[] res = new int[0];
-            return res;
+        if (startIndex == input.length) {
+            return new int[foundSoFar];
         }
 
-        int[] smallAns = getFirstIndex(input, x, startIndex + 1);
-
-        // if the number is found at startIndex
         if (input[startIndex] == x) {
-            int[] res = new int[smallAns.length + 1];
-
-            // shift elements to accomodate the starting index
-            res[0] = startIndex;
-
-            for (int i = 0; i < smallAns.length; i++) {
-                res[i + 1] = smallAns[i];
-            }
+            int[] res = getFirstIndex(input, x, startIndex + 1, foundSoFar + 1);
+            res[foundSoFar] = startIndex;
             return res;
-
         } else {
-            return smallAns;
+            int[] res = getFirstIndex(input, x, startIndex + 1, foundSoFar);
+            return res;
         }
+
     }
 
     public static int[] getFirstIndex(int input[], int x) {
-        return getFirstIndex(input, x, 0);
+        return getFirstIndex(input, x, 0, 0);
     }
 
     public static void main(String[] args) {
