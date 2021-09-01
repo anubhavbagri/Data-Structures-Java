@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class AllIndex {
-    private static int[] getFirstIndex(int input[], int x, int startIndex, int foundSoFar) {
+    private static int[] getFirstIndex(int[] input, int x, int startIndex, int foundSoFar) {
 
         if (startIndex == input.length) {
             return new int[foundSoFar];
@@ -12,20 +12,19 @@ public class AllIndex {
             res[foundSoFar] = startIndex;
             return res;
         } else {
-            int[] res = getFirstIndex(input, x, startIndex + 1, foundSoFar);
-            return res;
+            return getFirstIndex(input, x, startIndex + 1, foundSoFar);
         }
 
     }
 
-    public static int[] getFirstIndex(int input[], int x) {
+    public static int[] getFirstIndex(int[] input, int x) {
         return getFirstIndex(input, x, 0, 0);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int a[] = new int[N];
+        int[] a = new int[N];
         for (int i = 0; i < N; i++) {
             a[i] = sc.nextInt();
         }
