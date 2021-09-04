@@ -14,6 +14,3 @@ public class SolutionQ1 {
         System.out.println(subtractProductAndSum(234));
     }
 }
-
-
-
