@@ -41,6 +41,6 @@
 #### Note
 ```
 👎 - More Dislikes than likes
-🛑 - Couldn't do myself, took help from discussion
+🛑 - Couldn't do myself, took external help
 🚧 - didn't understand
 ```
