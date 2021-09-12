@@ -37,3 +37,10 @@
 
 - [ ]  1. [Max Value of Equation](https://leetcode.com/problems/max-value-of-equation/)
 - [ ]  2. [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+
+#### Note
+```
+‼ - More Dislikes than likes
+🛑 - Couldn't do myself, took help from discussion
+🚧 - didn't understand
+```
