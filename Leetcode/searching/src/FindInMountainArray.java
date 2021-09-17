@@ -2,11 +2,12 @@
  * // This is MountainArray's API interface.
  * // You should not implement it, or speculate about its implementation
  * interface MountainArray {
- *     public int get(int index) {}
- *     public int length() {}
+ * public int get(int index) {}
+ * public int length() {}
  * }
  */
 // https://leetcode.com/problems/find-in-mountain-array/ [hard] -> Leetcode all test cases passed
+    /*
 class Solution {
     public int findInMountainArray(int target, MountainArray mountainArr)     {
         int peak = peakIndexInMountainArray(mountainArr);
@@ -55,3 +56,4 @@ class Solution {
         return -1;
     }
 }
+     */
