@@ -2,8 +2,9 @@ import java.util.Arrays;
 
 public class Sorting {
     public static void main(String[] args) {
-        int[] arr = {99, 1, -32, -44, 2};
-        selectionSort(arr);
+        int[] arr = {0, -23, 56, 18};
+//        selectionSort(arr);
+        insertionSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -16,7 +17,19 @@ public class Sorting {
         }
     }
 
-    static void swapArray(int[] arr, int first, int second){
+    static void insertionSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j > 0; j--) {
+                if (arr[j] < arr[j - 1]) {
+                    swapArray(arr, j, j - 1);
+                } else {
+                    break;
+                }
+            }
+        }
+    }
+
+    static void swapArray(int[] arr, int first, int second) {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;
@@ -25,7 +38,7 @@ public class Sorting {
     private static int getMaxIndex(int[] arr, int start, int end) {
         int max = start;
         for (int i = start; i <= end; i++) {
-            if(arr[max] < arr[i]){
+            if (arr[max] < arr[i]) {
                 max = i;
             }
         }
