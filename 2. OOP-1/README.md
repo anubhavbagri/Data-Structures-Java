@@ -2,7 +2,7 @@
 
 Problem Name: **Complex Number Class**<br>
 Problem Level: MEDIUM<br>
-Problem Description: A ComplexNumber class contains two data members : one is the real part (R) and the other is imaginary (I) (both integers).
+Problem Description: OOP1.A ComplexNumber class contains two data members : one is the real part (R) and the other is imaginary (I) (both integers).
 #### Implement the Complex numbers class that contains following functions -
 
 ##### 1. constructor

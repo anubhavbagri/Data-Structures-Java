@@ -47,7 +47,7 @@ Problem Name: **Staircase**<br>
 Problem Level: MEDIUM<br>
 Problem Description:
 
-#### A child is running up a staircase with N steps, and can hop either 1 step, 2 steps or 3 steps at a time. Implement a method to count how many possible ways the child can run up to the stairs. You need to return number of possible ways W.
+#### OOP1.A child is running up a staircase with N steps, and can hop either 1 step, 2 steps or 3 steps at a time. Implement a method to count how many possible ways the child can run up to the stairs. You need to return number of possible ways W.
 
 ##### Input format :
 
@@ -184,7 +184,7 @@ Problem Name: **Return subsets sum to K**<br>
 Problem Level: MEDIUM<br>
 Problem Description:
 
-#### Given an array A of size n and an integer K, return all subsets of A which sum to K.
+#### Given an array OOP1.A of size n and an integer K, return all subsets of OOP1.A which sum to K.
 
 ##### Subsets are of length varying from 0 to n, that contain elements of the array. But the order of elements should remain same as in the input array.
 
@@ -217,7 +217,7 @@ Problem Name: **Print Subset Sum to K**<br>
 Problem Level: MEDIUM<br>
 Problem Description:
 
-#### Given an array A and an integer K, print all subsets of A which sum to K.
+#### Given an array OOP1.A and an integer K, print all subsets of OOP1.A which sum to K.
 
 ##### Subsets are of length varying from 0 to n, that contain elements of the array. But the order of elements should remain same as in the input array.
 
@@ -252,7 +252,7 @@ Problem Description:
 
 ##### Input format :
 
-    A numeric string
+    OOP1.A numeric string
 
 ##### Constraints :
 
@@ -282,7 +282,7 @@ Problem Description:
 
 ##### Input format :
 
-    A numeric string S
+    OOP1.A numeric string S
 
 ##### Output Format :
 
