@@ -1,7 +1,7 @@
 public class InfiniteArray {
     public static void main(String[] args) {
         int[] arr = {3, 5, 7, 9, 10, 90, 100, 130, 140, 160, 170};
-        int target = 10;
+        int target = 100;
         System.out.println(ans(arr, target));
     }
 
@@ -13,11 +13,8 @@ public class InfiniteArray {
 
         // condition for the target to lie in the range
         while (target > arr[end]) {
-            int temp = end + 1; // this is the new start
-            // double the chunk value
-            // end = previous end + SizeOfChunk * 2
-            end = end + (end - start + 1) * 2;
-            start = temp;
+            start = end; // this is the new start
+            end = end * 2;
         }
 
         return binarySearch(arr, target, start, end);

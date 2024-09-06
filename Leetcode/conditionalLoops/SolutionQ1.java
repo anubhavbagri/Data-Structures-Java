@@ -1,3 +1,5 @@
+package conditionalLoops;
+
 public class SolutionQ1 {
     public static int subtractProductAndSum(int n) {
         int sum = 0, product = 1;
